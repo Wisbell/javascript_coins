@@ -20,7 +20,7 @@ American coins of quarters, dimes, nickels, and pennies.
 function coinCounter (amount) {
   // Initialize a JavaScript object to hold the coins
   var coinPurse = {
-    quarter: 0,
+    quarters: 0,
     dimes: 0,
     nickels: 0,
     pennies: 0
@@ -47,7 +47,6 @@ function coinCounter (amount) {
         amount -= .10;
         coinPurse.dimes++;
       }
-
     }
 
 
@@ -56,7 +55,6 @@ function coinCounter (amount) {
       while (amount >= .05) {
         amount -= .05;
         coinPurse.nickels;
-
       }
     }
 
@@ -73,5 +71,6 @@ function coinCounter (amount) {
   return coinPurse;
 }
 
-var coins = coinCounter(.25)
+// Testing
+var coins = coinCounter(125.24);
 console.log(coins);
